@@ -49,7 +49,6 @@ class Vector(object):
         return sum([x * y for x, y in zip(self.coordinates, other.coordinates)])
 
     def angle(self, other):
-        #print(self.magnitude() * other.magnitude())
         result = acos(self.dot(other) / self.magnitude() * other.magnitude())
         print(str(result) + " radians")
         print(str(result * (180 / pi)) + " degrees")
